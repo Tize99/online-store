@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    {% block title %}{% endblock %}
+</head>
+<body><script type="text/javascript" charset="UTF-8" src="https://www.microsofttranslator.com/ajax/v2/widget.aspx?mode=manual&amp;from=en&amp;to=ru&amp;toolbar=thin"></script><div id="MicrosoftTranslatorWidget" style="width: 200px; border: 2px solid rgb(0, 88, 147); background-color: rgb(120, 173, 208); direction: ltr; display: none;" class=""><div id="MSTWContent"><div id="MSTWHeader"><div class="MSTWBox"><span id="MSTWHeaderText" style="width: 160px;">Перевести эту страницу</span></div><div class="MSTWBox"><a href="https://aka.ms/widget-retirement" target="_blank" title="Конец поддержки Переводчик веб-виджет">Недоступен</a></div></div><div id="MSTWFooter"><span id="MSTWBrand" class="MSTWBox"><a id="MSTWBrandLink" title="Microsoft® Translator" href="http://www.bing.com/translator?ref=MSTWidget" target="_blank"><span style="font-family: Segoe UI; direction: ltr;">Microsoft<sup style="vertical-align: super; font-size: 70%;">®</sup> Translator</span></a></span></div><div id="MSTWHidden" style="display: none;"><span id="MSTWCheckOut">Проверьте данную страницу на языке {0} переведенную с языка {1}</span><span id="MSTWTranslatedFrom">переведено с</span><span id="MSTWOriginal">Исходный текст:</span><span id="MSTWTranslated">Перевод:</span><span id="MSTWPoweredBy">Автоматизированный перевод на платформе Microsoft® Translator</span><span id="MSTWStart">Начать перевод</span><span id="MSTWStop">Завершить перевод</span><span id="MSTWClose">Закрыть</span><span id="MSTWCloseShowOrig">Закрыть и отобразить исходную страницу</span><span id="MSTWLangNotSup"></span><span id="MSTWSelect">Выбор</span></div></div></div><script type="text/javascript">function _translatepage_273e47018b2ebf6719ff99f670aaa243(from_lang)
+							{
+//								if (from_lang == 'ru')
+								if (["","ru"].indexOf(from_lang) >= 0)
+									return;
+
+								if ('bing' == "bing")
+								{
+									var eWidgetDiv = document.getElementById('MicrosoftTranslatorWidget');
+									if (!eWidgetDiv)
+									{
+										var eWidgetDiv = document.createElement('DIV');
+										eWidgetDiv.id = 'MicrosoftTranslatorWidget';
+										eWidgetDiv.style.display = 'none';
+										document.body.insertBefore(eWidgetDiv, document.body.firstChild);
+									}
+
+									window.document.cookie = "mstmode=notify";
+									window.document.cookie = "mstto=" + 'ru';
+
+									var eWidgetScript = document.createElement('SCRIPT');
+									eWidgetScript.type = "text/javascript";
+									eWidgetScript.charset = "UTF-8";
+/*
+									eWidgetScript.onload = function()
+									{
+										if (window.Microsoft && window.Microsoft.Translator)
+											Microsoft.Translator.translate(document.body, from_lang, 'ru');
+									}
+*/
+									if (from_lang == "auto")
+										from_lang = "";
+									// !! for moderators: this block is not active for some browsers! Check upper second `if`!
+									eWidgetScript.src = 'https://www.microsofttranslator.com/ajax/v2/widget.aspx?mode=manual&from=' + from_lang + '&to=' + 'ru' + '&toolbar=thin';
+/*
+									eWidgetScript.src = ((window.location && window.location.href && window.location.href.indexOf('https') == 0)
+															? "https://ssl.microsofttranslator.com"
+															: "http://www.microsofttranslator.com"
+														) + "/ajax/v2/widget.aspx?mode=manual&from=_"+from_lang + "&to=" + 'ru' + "&layout=ts";
+*/
+									window._mstAppId = window.my_mstAppId;
+									document.body.insertBefore(eWidgetScript, document.body.firstChild);
+								}
+								else if ('bing' == "yandex")
+								{
+									var ytWidget = document.createElement("DIV");
+									ytWidget.id = "ytWidget";
+									window.document.body.insertBefore(ytWidget, window.document.body.childNodes[0]);
+
+									var yTransScript = window.document.createElement("SCRIPT");
+									// !! for moderators: this block is not active for some browsers! Check upper second `if`!
+									yTransScript.src = "https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&pageLang=" + from_lang + "&defaultLang=ru&widgetTheme=light&autoMode=false";
+									window.document.body.appendChild( yTransScript );
+								}
+								else	// google
+								{
+									var onGoogleTranslateElementInitFunctionName = arguments.callee.name.replace(/^_[^_]+_/, "_googleTranslateElementInit_");		// we don't see here scriptCfg, because we redefine this function as inline
+									window[onGoogleTranslateElementInitFunctionName] = function()
+									{
+//										window.google.translate._const._cl = 'ru';
+										new window.google.translate.TranslateElement({
+											pageLanguage: from_lang,
+											autoDisplay: false
+										}).showBanner(false);
+									};
+
+									var gTransScript = window.document.createElement("SCRIPT");
+									// !! for moderators: this block is not active for some browsers! Check upper second `if`!
+									gTransScript.src = "https://translate.google." + (false ? "cn" : "com") + "/translate_a/element.js?cb="+onGoogleTranslateElementInitFunctionName+"&hl="+'ru';
+									window.document.body.appendChild( gTransScript );
+								}
+							}</script>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check" viewBox="0 0 16 16">
+    <title>Check</title>
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+  </symbol>
+</svg>
+
+<div class="container py-3">
+  <header>
+    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        <span class="fs-4">Online store</span>
+      </a>
+
+      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <a class="me-3 py-2 text-dark text-decoration-none" href="/">Главная страница</a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="/about">Страница про магазин</a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="/home">Home</a>
+      </nav>
+      <a class="btn btn-outline-primary" href="/create">Добавить товар</a>
+    </div>
+      {% block body %}{% endblock %}
+
+
+
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
+        <small class="d-block mb-3 text-muted">© 2017–2021</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Features</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+
+
+
+<script type="text/javascript">_translatepage_273e47018b2ebf6719ff99f670aaa243("en");</script><div at-magnifier-wrapper=""><div class="at-theme-light"><div class="at-base notranslate" translate="no"><div class="Z1-AJ" style="top: 0px; left: 0px;"></div></div></div></div></body>
+</html>
